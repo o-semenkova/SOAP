@@ -1,6 +1,5 @@
 package service;
 
-import domain.Book;
 
 import javax.jws.WebService;
 
@@ -9,8 +8,8 @@ import javax.jws.WebService;
  */
 
 //Service Implementation
-@WebService(endpointInterface = "service.BookService")
-public class BookServiceImpl implements BookService {
+@WebService(endpointInterface = "service.BookServiceWsImport")
+public class BookServiceImpl implements service.BookServiceWsImport {
     @Override
     public String getBook(int id) {
         return "Book here";

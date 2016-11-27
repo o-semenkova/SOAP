@@ -20,7 +20,7 @@ public class BookClient {
         Service service = Service.create(url, qname);
 
 
-        BookService bookService = service.getPort(BookService.class);
+        service.BookServiceWsImport bookService = service.getPort(service.BookServiceWsImport.class);
 
         System.out.println(bookService.getBook(1));
         System.out.println(bookService.deleteBook(1));

@@ -1,6 +1,5 @@
 package service;
 
-import domain.Book;
 
 import javax.jws.WebMethod;
 import javax.jws.WebService;
